@@ -1,0 +1,1 @@
+Projeto onde será feita a extração de dados da API coin base utilizando a biblioteca request
