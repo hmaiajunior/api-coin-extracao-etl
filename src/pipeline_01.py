@@ -35,6 +35,8 @@ def salvar_dados_tinydb(dados, db_name="bitcoin.json"):
 
 if __name__ == "__main__":
     #Extração de dados
-    dados_json = extract_dados_bitcoin()
-    dados_tratados = transform_dados_bitcoin(dados_json)
-    salvar_dados_tinydb(dados_tratados)
+    while True:
+        dados_json = extract_dados_bitcoin()
+        dados_tratados = transform_dados_bitcoin(dados_json)
+        salvar_dados_tinydb(dados_tratados)
+        time.sleep(60)
